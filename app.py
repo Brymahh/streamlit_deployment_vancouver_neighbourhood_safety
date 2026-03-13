@@ -17,5 +17,14 @@ st.markdown(
 left_col, right_col = st.columns([0.9, 2.5])
 
 with left_col:
-    text = """This dashboard provides insights into crime incidents across Vancouver neighbourhoods. Explore the data to understand safety trends and make informed decisions about where to live, work, or visit in the city."""
+    text = """This dashboard provides insights into 2025 crime incidents recorded by the Vancouver Police Department across Vancouver neighbourhoods. Explore the data to understand safety trends and make informed decisions about where to live, work, or visit in the city."""
     st.markdown(text)
+    
+    st.metric(label="Total Incidents", value=f"{total_incidents:,}")
+    st.divider()
+    
+    st.subheader("Filters")
+    selected_neighbourhood = st.selectbox("Neighbourhood", options=["All"] + neighbourhoods)
+    selected_crime_type = st.selectbox("Crime Type", options=["All"] + crime_types)
+    selected_time = st.selectbox("Time of Day", options=["All"] + timeline)
+    
