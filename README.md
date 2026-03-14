@@ -18,7 +18,7 @@ git clone https://github.com/Brymahh/streamlit_deployment_vancouver_neighbourhoo
 cd streamlit_deployment_vancouver_neighbourhood_safety
 ```
 
-**2. Install the project environment
+**2. Install the project environment**
 
 ```bash
 conda env create -f environment.yml
