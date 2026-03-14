@@ -1,0 +1,9 @@
+name: streamlit_env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pandas
+  - matplotlib
+  - plotly
+prefix: /Users/braimah/miniforge3/envs/streamlit_env
